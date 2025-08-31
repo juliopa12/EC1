@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Empanadas Clicker - Equilibrado</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>🍴 Empanadas Clicker 🍴</h1>
+
+    <button onclick="showSection('clicker')">Hacer Empanada</button>
+    <button onclick="showSection('upgrades')">Mejoras</button>
+    <button onclick="showSection('shop')">Ingredientes</button>
+    <button onclick="renacer()">✨ Renacer ✨</button>
+
+    <div id="clicker-section" class="section">
+        <img id="empanada-img" class="emp-img" src="images/empanada1.png" alt="Empanada">
+        <h2 id="empanada-name">Empanada tradicional</h2>
+        <p id="empanada-desc">Clásica empanada con sabor casero</p>
+        <button id="click-empanada">Hacer Empanada</button>
+        <p>Empanadas hechas: <span id="empanada-count">0</span></p>
+        <p class="renacimiento">Renacimientos: <span id="rebirth-count">0</span> | Necesitas <span id="rebirth-needed">100000</span> empanadas para renacer</p>
+        <h3>Empanadas desbloqueadas</h3>
+        <ul id="empanadas-ul"></ul>
+    </div>
+
+    <div id="upgrades-section" class="section" style="display:none;">
+        <h2>🌳 Mejoras</h2>
+        <div id="upgrades"></div>
+    </div>
+
+    <div id="shop-section" class="section" style="display:none;">
+        <h2>🛒 Ingredientes</h2>
+        <div id="shop-items"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
